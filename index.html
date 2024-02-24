@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to Lets-Learn</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Lets-Learn.AI</title>
+<style>
+  body {
+    background-color: #99dcdf; /* Sets the background color */
+    margin: 0; /* Removes the default margin */
+    height: 100vh; /* Sets the minimum height to 100% of the viewport */
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks flex items vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text */
+  }
+  
+  img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Keeps the image aspect ratio */
+  }
+
+  /* This is for larger screens to limit the QR code size */
+  @media (min-width: 768px) {
+    img {
+      max-width: 50%; /* You can adjust this value to your preference */
+    }
+  }
+</style>
 </head>
 <body>
-    <h1>Welcome to Lets-Learn.AI</h1>
-    <p>Scan this QR code to join our Discord group:</p>
-    <img src="https://github.com/ChoongJingLee/lets-learn-ai/blob/main/data/qr-code/qr-code-500.png?raw=true" alt="QR Code">
+<h1>Welcome to Lets-Learn.AI</h1>
+<p>Scan this QR code to join our Discord group:</p>
+<img src="https://github.com/ChoongJingLee/lets-learn-ai/blob/main/data/qr-code/qr-code-500.png?raw=true" alt="QR Code">
 </body>
 </html>
