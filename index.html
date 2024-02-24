@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome to Lets-Learn.AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 <style>
   body {
     background-color: #99dcdf; /* Sets the background color */
@@ -14,6 +15,34 @@
     justify-content: center; /* Centers content vertically */
     align-items: center; /* Centers content horizontally */
     text-align: center; /* Centers text */
+    font-family: 'Open Sans', sans-serif; /* Example font */
+  }
+  
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not displayed until it is animated */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Centers the container */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  .roboto-font {
+      font-family: 'Roboto Slab', serif;
+      display: inline; /* Keep it inline to not disrupt the flow of the sentence */
+      font-weight: 900; /* This is assuming you want the Roboto Slab to be bold */
+}
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
   }
   
   img {
@@ -30,8 +59,9 @@
 </style>
 </head>
 <body>
-<h1>Welcome to Lets-Learn.AI</h1>
-<p>Scan this QR code to join our Discord group:</p>
+    <div class="typewriter">
+        <h1>Welcome to <span class="roboto-font">Lets-Learn.AI</span></h1>
+      </div>
 <img src="https://github.com/ChoongJingLee/lets-learn-ai/blob/main/data/qr-code/qr-code-500.png?raw=true" alt="QR Code">
 </body>
 </html>
