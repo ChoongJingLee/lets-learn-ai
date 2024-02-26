@@ -17,15 +17,19 @@
     text-align: center; /* Centers text */
     font-family: 'Open Sans', sans-serif; /* Example font */
   }
-  
+  h1{
+    margin: 0;
+    padding: 0;
+  }
   .typewriter h1 {
     overflow: hidden; /* Ensures the content is not displayed until it is animated */
     border-right: .15em solid orange; /* The typewriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
+    margin-top: 5px;
     margin: 0 auto; /* Centers the container */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(30, end),
+      typing 2.5s steps(30, end),
       blink-caret .75s step-end infinite;
   }
 
@@ -85,8 +89,9 @@
 </style>
 </head>
 <body>
+    <h1>Welcome to</h1>
     <div class="typewriter">
-        <h1>Welcome to <span class="roboto-font">Lets-Learn.AI</span></h1>
+        <h1><span class="roboto-font">Lets-Learn.AI</span></h1>
       </div>
       <a href="https://discord.gg/EUzG3bq3SC" class="qr-button"></a>
 </body>
