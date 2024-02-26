@@ -21,17 +21,8 @@
     margin: 0;
     padding: 0;
   }
-  .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not displayed until it is animated */
-    border-right: .15em solid orange; /* The typewriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin-top: 5px;
-    margin: 0 auto; /* Centers the container */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 2.5s steps(30, end),
-      blink-caret .75s step-end infinite;
-  }
+
+
 
   .roboto-font {
       font-family: 'Roboto Slab', serif;
@@ -65,15 +56,22 @@
   transform: translateY(4px); /* Moves the button down to mimic being pressed */
 }
 
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .0em solid orange;
+  white-space: nowrap;
+  margin-top: 5px;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 2.5s steps(30, end);
+}
+
   @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
   }
 
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
   
   img {
     max-width: 100%; /* Makes the image responsive */
